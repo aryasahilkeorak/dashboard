@@ -1,0 +1,86 @@
+.ai-wd-tower-graph {
+    margin: 30px 0;
+    position: relative;
+
+    .numbersRow {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin: 15px 0;
+            position: relative;
+
+            &::after {
+                content: '';
+                width: calc(100% - 60px);
+                height: 2px;
+                background-color: $gray-800;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+
+            }
+        }
+    }
+
+    .deptNames {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 40px;
+        margin-right: 20px;
+
+        span {
+            width: calc(100% / 7);
+            text-align: center;
+        }
+
+        @media (max-width: 576px) {
+            margin-top: 15px;
+
+            span {
+                transform: rotate(270deg);
+                text-wrap: nowrap;
+            }
+        }
+    }
+
+    .graphTowers {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        height: 300px;
+        width: calc(100% - 60px);
+        display: flex;
+        justify-content: space-evenly;
+
+        @include tower-height(100);
+
+        .tower-wrapper {
+            width: calc(100% / 7);
+            height: 100%;
+            display: flex;
+            align-items: end;
+
+            .tower-outer {
+                margin: 0 auto;
+                width: 25px;
+                background-color: $primary;
+                border-radius: 30px;
+                display: flex;
+                align-items: end;
+                height: 99%;
+
+                .tower-inner {
+                    background-color: $gray-800;
+                    width: 100%;
+                    border-radius: 30px;
+                }
+
+                @media (max-width: 576px) {
+                    width: 15px;
+                }
+            }
+        }
+    }
+}

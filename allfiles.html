@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+    <header class="ai-wd-header">
+        <nav class="navbar navbar-expand-lg ai-wd-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/images/logos/ai-logo-login-white.png" alt="brand-logo" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-folder fs-3 me-2"></i>
+                        <h5 class="mb-0">Available Storage</h5>
+                    </div>
+
+                    <div class="navbar-searchBox mx-auto">
+                        <input type="search" name="" id="" placeholder="search here">
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-primary rounded-pill">Start Test</button>
+
+                        <a href="#" class="nav-notifications ms-4">
+                            <i class="fa-solid fa-bell"></i>
+                            <div class="notification-count">10</div>
+                        </a>
+
+                        <a href="#" class="user-dp ms-4">
+                            <img src="./assets/images/avatar-profile.png" alt="avtar" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="ai-wd-wrapper">
+        <aside class="ai-wd-sidebar">
+            <div class="sidebar-items">
+                <div id="sidebarToggler" class="sidebarToggler"></div>
+
+                <h5 class="sidebar-menu-heading">File Storage</h5>
+
+                <div class="accordion" id="accordionPanelsStayOpenMenuOne">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOneMenu" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseOneMenu">
+                                <i class="fa-solid fa-chart-column"></i><span>Performance</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOneMenu" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-signal"></i><span>Performance 1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-chart-line"></i><span>Performance 2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-chart-gantt"></i><span>Performance
+                                                3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwoMenu" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwoMenu">
+                                <i class="fa-solid fa-cloud-arrow-up"></i><span>Available Space</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwoMenu" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThreeMenu" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThreeMenu">
+                                <i class="fa-regular fa-clock"></i><span>Recent Documents</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThreeMenu" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-audio"></i><span>Audios</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-video"></i><span>Videos</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-image"></i><span>Images</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <h5 class="sidebar-menu-heading mt-4">Shared Documents</h5>
+
+                <div class="accordion" id="accordionPanelsStayOpenMenuTwo">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOneMenuTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseOneMenuTwo">
+                                <i class="fa-solid fa-chart-column"></i><span>Performance</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOneMenuTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-signal"></i><span>Performance 1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-chart-line"></i><span>Performance 2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-chart-gantt"></i><span>Performance
+                                                3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwoMenuTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwoMenuTwo">
+                                <i class="fa-solid fa-cloud-arrow-up"></i><span>Available Space</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwoMenuTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThreeMenuTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThreeMenuTwo">
+                                <i class="fa-regular fa-clock"></i><span>Recent Documents</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThreeMenuTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-audio"></i><span>Audios</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-video"></i><span>Videos</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-image"></i><span>Images</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 new-folder-btn">
+                    <button class="btn btn-light rounded-pill w-100"><i class="fa-solid fa-circle-plus"></i><span>New
+                            Folder</span></button>
+                </div>
+
+            </div>
+
+            <div class="expand-storage-wrapper">
+                <div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span>Storage</span> <span>75%</span>
+                    </div>
+                    <div class="progress rounded-pill bg-dark mb-3">
+                        <div class="progress-bar bg-primary rounded-pill w-75" role="progressbar" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button class="btn btn-primary rounded-pill w-100">Expand Storage</button>
+
+                </div>
+            </div>
+        </aside>
+
+        <section class="ai-wd-main-content">
+            <h4 class="mb-3 fw-normal heading-border-bottom">All Project Files</h4>
+
+            <!-- filter and short by navigation -->
+            <div class="filter-short-nav">
+                <h5 class="mb-0 fw-normal">Directories</h5>
+                <div class="filter-short-btns">
+                    <button class="icon-btns" id="filterFiles"><i class="fa-solid fa-filter"></i></button>
+
+                    <button class="icon-btns" id="eyeToggle">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+
+                    <button class="icon-btns"><i class="fa-solid fa-circle-info"></i></button>
+
+                    <button class="btn btn-light rounded-pill px-5">Sort</button>
+                    <button class="btn btn-light rounded-pill px-5">View</button>
+                    <button class="btn btn-primary rounded-pill px-5">New</button>
+                </div>
+            </div>
+
+            <!-- file cards and filters -->
+            <div class="row">
+
+                <div class="col-xl-12" id="fileCardsWrapper">
+                    <!-- files cards wrapper -->
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="ai-wd-fileCards ai-wd-card bg-d800">
+                                <div class="ai-wd-card bg-d900">
+                                    <div class="file-icons">
+                                        <i class="fa-solid fa-headphones"></i>
+                                    </div>
+                                </div>
+                                <h5 class="fileCard-heading">Audio files</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <i class="fa-regular fa-folder me-1"></i>
+                                        <span>3,239</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cloud"></i>
+                                        <span>58</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="ai-wd-fileCards ai-wd-card bg-d800">
+                                <div class="ai-wd-card bg-d900">
+                                    <div class="file-icons">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                </div>
+                                <h5 class="fileCard-heading">Video files</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <i class="fa-regular fa-folder me-1"></i>
+                                        <span>3,239</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cloud"></i>
+                                        <span>580MB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="ai-wd-fileCards ai-wd-card bg-d800">
+                                <div class="ai-wd-card bg-d900">
+                                    <div class="file-icons">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </div>
+                                </div>
+                                <h5 class="fileCard-heading">Load Test Documents</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <i class="fa-regular fa-folder me-1"></i>
+                                        <span>3,239</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cloud"></i>
+                                        <span>358MB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="ai-wd-fileCards ai-wd-card bg-d800">
+                                <div class="ai-wd-card bg-d900">
+                                    <div class="file-icons">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </div>
+                                </div>
+                                <h5 class="fileCard-heading">Load Test Images</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <i class="fa-regular fa-folder me-1"></i>
+                                        <span>3,239</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cloud"></i>
+                                        <span>Total</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load Test Files -->
+                    <h5 class="fw-normal mb-3">Load Test Files</h5>
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="loadTestFiles-card ai-wd-card bg-primary">
+                                <div class="ai-wd-card bg-d900">
+                                    <img src="./assets/images/video.jpg" alt="video-cover" class="img-fluid">
+                                </div>
+
+                                <div class="me-3 d-flex">
+                                    <i class="fa-regular fa-folder fs-4 me-2"></i>
+                                    <h5 class="fileCard-heading">Key Video</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="loadTestFiles-card ai-wd-card bg-primary">
+                                <div class="ai-wd-card bg-d900">
+                                    <img src="./assets/images/audio.webp" alt="video-cover" class="img-fluid">
+                                </div>
+
+                                <div class="me-3 d-flex">
+                                    <i class="fa-regular fa-folder fs-4 me-2"></i>
+                                    <h5 class="fileCard-heading">Favorite Songs</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="loadTestFiles-card ai-wd-card bg-primary">
+                                <div class="ai-wd-card bg-d900">
+                                    <img src="./assets/images/dj.jpg" alt="video-cover" class="img-fluid">
+                                </div>
+
+                                <div class="me-3 d-flex">
+                                    <i class="fa-regular fa-folder fs-4 me-2"></i>
+                                    <h5 class="fileCard-heading">Live DJ Songs</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="loadTestFiles-card ai-wd-card bg-primary">
+                                <div class="ai-wd-card bg-d900">
+                                    <img src="./assets/images/memories.jpg" alt="video-cover" class="img-fluid">
+                                </div>
+
+                                <div class="me-3 d-flex">
+                                    <i class="fa-regular fa-folder fs-4 me-2"></i>
+                                    <h5 class="fileCard-heading">Memorable Photos</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="loadTestFiles-card ai-wd-card bg-primary">
+                                <div class="ai-wd-card bg-d900">
+                                    <img src="./assets/images/snapshots-cover.png" alt="video-cover" class="img-fluid">
+                                </div>
+
+                                <div class="me-3 d-flex">
+                                    <i class="fa-regular fa-folder fs-4 me-2"></i>
+                                    <h5 class="fileCard-heading">Snapshots</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="loadTestFiles-card ai-wd-card bg-primary">
+                                <div class="ai-wd-card bg-d900">
+                                    <img src="./assets/images/travel.jpg" alt="video-cover" class="img-fluid">
+                                </div>
+
+                                <div class="me-3 d-flex">
+                                    <i class="fa-regular fa-folder fs-4 me-2"></i>
+                                    <h5 class="fileCard-heading">Memorable Photos</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-4 col-lg-6">
+                            <div class="loadTestFiles-card ai-wd-card bg-primary">
+                                <div class="ai-wd-card bg-d900">
+                                    <img src="./assets/images/team.jpg" alt="video-cover" class="img-fluid">
+                                </div>
+
+                                <div class="me-3 d-flex">
+                                    <i class="fa-regular fa-folder fs-4 me-2"></i>
+                                    <h5 class="fileCard-heading">Memorable Photos</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- filters wrapper -->
+                <div class="col-xl-3 d-none" id="filterWrapper">
+                    <div class="filtersWrapper">
+                        <!-- header -->
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-filter me-1 mt-1"></i>
+                                <h5 class="mb-0">Apply Filter</h5>
+                            </div>
+                            <button class="icon-btns" id="closeFilter"><i class="fa-solid fa-xmark fs-3"></i></button>
+                        </div>
+
+                        <h6 class="my-3 fw-normal">File Type Filter</h6>
+
+                        <form action="#">
+
+                            <div class="filter-form-group">
+                                <div class="me-3">
+                                    <input type="checkbox" name="" id="" class="ai-wd-checkbox">
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <span>Document Details</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-form-group">
+                                <div class="me-3">
+                                    <input type="checkbox" name="" id="" class="ai-wd-checkbox" checked>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-camera"></i>
+                                    <span>Capture Moments</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-form-group">
+                                <div class="me-3">
+                                    <input type="checkbox" name="" id="" class="ai-wd-checkbox">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Listen to Music</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-form-group">
+                                <div class="me-3">
+                                    <input type="checkbox" name="" id="" class="ai-wd-checkbox">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-video"></i>
+                                    <span>Watch Video Clips</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-form-group">
+                                <div class="me-3">
+                                    <input type="checkbox" name="" id="" class="ai-wd-checkbox">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-tv"></i>
+                                    <span>Presentations</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-form-group">
+                                <div class="me-3">
+                                    <input type="checkbox" name="" id="" class="ai-wd-checkbox">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Listen to Music</span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <h6 class="my-4 fw-normal">Content Creators Showcase</h6>
+
+                        <form action="#">
+
+                            <div class="filter-form-group">
+                                <div class="me-3">
+                                    <input type="checkbox" name="" id="" class="ai-wd-checkbox">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>User Profile</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-form-group">
+                                <div class="me-3">
+                                    <input type="checkbox" name="" id="" class="ai-wd-checkbox" checked>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Team Collaboration</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+    <header class="ai-wd-header">
+        <nav class="navbar navbar-expand-lg ai-wd-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/images/logos/ai-logo-login-white.png" alt="brand-logo" class="img-fluid">
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-searchBox">
+                        <input type="search" name="" id="" placeholder="search here">
+                    </div>
+
+                    <div class="d-flex align-items-center ms-auto">
+                        <button class="btn btn-primary rounded-pill">Start Test</button>
+
+                        <a href="#" class="nav-notifications ms-4">
+                            <i class="fa-solid fa-bell"></i>
+                            <div class="notification-count">10</div>
+                        </a>
+
+                        <a href="#" class="user-dp ms-4">
+                            <img src="./assets/images/avatar-profile.png" alt="avtar" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="ai-wd-wrapper">
+        <aside class="ai-wd-sidebar">
+            <div class="sidebar-items">
+                <div id="sidebarToggler" class="sidebarToggler"></div>
+
+                <h5 class="sidebar-menu-heading">File Storage</h5>
+
+                <div class="accordion" id="accordionPanelsStayOpenMenuOne">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOneMenu" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseOneMenu">
+                                <i class="fa-solid fa-chart-column"></i><span>Performance</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOneMenu" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-signal"></i><span>Performance 1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-chart-line"></i><span>Performance 2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-chart-gantt"></i><span>Performance
+                                                3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwoMenu" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwoMenu">
+                                <i class="fa-solid fa-cloud-arrow-up"></i><span>Available Space</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwoMenu" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="./allfiles.html"><i class="fa-regular fa-folder"></i><span>Folder 1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="./allfiles.html"><i class="fa-regular fa-folder"></i><span>Folder 2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThreeMenu" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThreeMenu">
+                                <i class="fa-regular fa-clock"></i><span>Recent Documents</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThreeMenu" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-audio"></i><span>Audios</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-video"></i><span>Videos</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-image"></i><span>Images</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <h5 class="sidebar-menu-heading mt-4">Shared Documents</h5>
+
+                <div class="accordion" id="accordionPanelsStayOpenMenuTwo">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOneMenuTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseOneMenuTwo">
+                                <i class="fa-solid fa-chart-column"></i><span>Performance</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOneMenuTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-signal"></i><span>Performance 1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-chart-line"></i><span>Performance 2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-chart-gantt"></i><span>Performance
+                                                3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwoMenuTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwoMenuTwo">
+                                <i class="fa-solid fa-cloud-arrow-up"></i><span>Available Space</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwoMenuTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-folder"></i><span>Folder 3</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThreeMenuTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThreeMenuTwo">
+                                <i class="fa-regular fa-clock"></i><span>Recent Documents</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThreeMenuTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-audio"></i><span>Audios</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-video"></i><span>Videos</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-regular fa-file-image"></i><span>Images</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 new-folder-btn">
+                    <button class="btn btn-light rounded-pill w-100"><i class="fa-solid fa-circle-plus"></i><span>New
+                            Folder</span></button>
+                </div>
+
+            </div>
+
+            <div class="expand-storage-wrapper">
+                <div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span>Storage</span> <span>75%</span>
+                    </div>
+                    <div class="progress rounded-pill bg-dark mb-3">
+                        <div class="progress-bar bg-primary rounded-pill w-75" role="progressbar" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button class="btn btn-primary rounded-pill w-100">Expand Storage</button>
+
+                </div>
+            </div>
+        </aside>
+
+        <section class="ai-wd-main-content">
+            <h4 class="mb-3 fw-bold">Dashboard</h4>
+
+            <div class="row">
+                <div class="col-xl-7">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ai-wd-card bg-d800">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="card-subheading">Pending Request Overview</h6>
+                                    <button class="icon-btns">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                </div>
+                                <h4 class="card-main-heading">Success Rate: 9%</h4>
+                                <p class="card-para">Compare to Last Month</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ai-wd-card bg-d800">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="card-subheading">Total absence cost</h6>
+                                    <button class="icon-btns">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                </div>
+                                <h4 class="card-main-heading">$2.56</h4>
+                                <p class="card-para">Compare to Last Month</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-normal mb-3">Employess by departments</h5>
+                    <!-- Employess by departments -->
+                    <div class="ai-wd-tower-graph">
+                        <div class="numbersRow">
+                            <span>25</span>
+                            <span>20</span>
+                            <span>15</span>
+                            <span>10</span>
+                            <span>05</span>
+                            <span>00</span>
+                        </div>
+
+                        <div class="graphTowers">
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h60"></div>
+                                </div>
+                            </div>
+
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h20"></div>
+                                </div>
+                            </div>
+
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h80"></div>
+                                </div>
+                            </div>
+
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h15"></div>
+                                </div>
+                            </div>
+
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h30"></div>
+                                </div>
+                            </div>
+
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h60"></div>
+                                </div>
+                            </div>
+
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h70"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="deptNames">
+                            <span>Finance</span>
+                            <span>HR</span>
+                            <span>Dot Net</span>
+                            <span>IT</span>
+                            <span>Design</span>
+                            <span>Android</span>
+                            <span>iOS</span>
+                        </div>
+                    </div>
+
+                    <!-- Total Company Expenses -->
+                    <h5 class="fw-normal mb-3">Total Company Expenses</h5>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="ai-wd-card bg-d800">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="card-subheading">Total bonuses expenditure</h6>
+                                    <button class="icon-btns">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                </div>
+                                <h4 class="card-main-heading">$347548.6</h4>
+                                <p class="card-para">Compare to Last Month</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="ai-wd-card bg-d800">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="card-subheading">Total commission expenses</h6>
+                                    <button class="icon-btns">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                </div>
+                                <h4 class="card-main-heading">$45000.72</h4>
+                                <p class="card-para">Compare to Last Month</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-normal mb-3">Workflow Quality Metrics</h5>
+                    <!-- Workflow Quality Metrics -->
+                    <div class="ai-wd-tower-graph towers-3">
+                        <div class="numbersRow">
+                            <span>50</span>
+                            <span>40</span>
+                            <span>30</span>
+                            <span>20</span>
+                            <span>10</span>
+                            <span>00</span>
+                        </div>
+
+                        <div class="graphTowers">
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h60"></div>
+                                </div>
+                            </div>
+
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h20"></div>
+                                </div>
+                            </div>
+
+                            <div class="tower-wrapper">
+                                <div class="tower-outer">
+                                    <div class="tower-inner tower-h80"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deptNames">
+                            <span>Finance</span>
+                            <span>HR</span>
+                            <span>Dot Net</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-5">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-12">
+                            <div class="ai-wd-card bg-d800">
+                                <h5 class="card-main-heading mb-4">Notifications</h5>
+                                <!-- card 1 -->
+                                <a href="#" class="ai-wd-card bg-d900">
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <h6 class="card-subheading">Department outing schedules</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="icon-btns mx-1 pined">
+                                                <i class="fa-solid fa-thumbtack"></i>
+                                            </button>
+                                            <button class="icon-btns mx-1">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <p class="card-para">Posted 5 minutes ago</p>
+                                </a>
+                                <!-- card 2 -->
+                                <a href="#" class="ai-wd-card bg-d900">
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <h6 class="card-subheading">Department outing schedules</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="icon-btns mx-1">
+                                                <i class="fa-solid fa-thumbtack"></i>
+                                            </button>
+                                            <button class="icon-btns mx-1">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <p class="card-para">Posted 5 minutes ago</p>
+                                </a>
+                                <!-- card 3 -->
+                                <a href="#" class="ai-wd-card bg-d900">
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <h6 class="card-subheading">Department outing schedules</h6>
+                                        <div class="d-flex align-items-center">
+                                            <button class="icon-btns mx-1">
+                                                <i class="fa-solid fa-thumbtack"></i>
+                                            </button>
+                                            <button class="icon-btns mx-1">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <p class="card-para">Posted 5 minutes ago</p>
+                                </a>
+
+                                <a href="#" class="btn btn-light w-100 rounded-pill">View All Announcements</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-12">
+                            <!-- Recent Activities -->
+                            <div class="ai-wd-card bg-primary">
+                                <h5 class="card-main-heading mb-4">Recent Activities</h5>
+
+                                <a href="#" class="ai-wd-card bg-d900">
+                                    <p class="card-para">10:40AM, 10 MAY. 2024</p>
+                                    <p class="card-para">NEW JOB POSTED BY SEM</p>
+                                    <h6 class="card-subheading">Review job description and requirements</h6>
+                                </a>
+
+                                <a href="#" class="ai-wd-card bg-d900">
+                                    <p class="card-para">10:40AM, 10 MAY. 2024</p>
+                                    <p class="card-para">NEW JOB POSTED BY SEM</p>
+                                    <h6 class="card-subheading">Review job description and requirements</h6>
+                                </a>
+
+                                <a href="#" class="ai-wd-card bg-d900">
+                                    <p class="card-para">10:40AM, 10 MAY. 2024</p>
+                                    <p class="card-para">NEW JOB POSTED BY SEM</p>
+                                    <h6 class="card-subheading">Review job description and requirements</h6>
+                                </a>
+
+                                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="my-3 my-md-0">Completed 12 tasks today</p>
+                                    <a href="#" class="btn btn-light rounded-pill">View All Tasks</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

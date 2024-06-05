@@ -1,0 +1,61 @@
+.ai-wd-card {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: block;
+    text-decoration: none;
+
+    &.bg-d800 {
+        background-color: $gray-800;
+    }
+
+    &.bg-d900 {
+        background-color: $gray-900;
+    }
+
+    .card-para {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .icon-btns {
+        &.pined {
+            color: $primary;
+        }
+    }
+}
+
+.ai-wd-fileCards {
+    cursor: pointer;
+    .fileCard-heading {
+        font-weight: normal;
+    }
+
+    .ai-wd-card {
+        margin-bottom: 16px;
+        text-align: center;
+
+        i{
+            font-size: 48px;
+        }
+    }
+}
+.loadTestFiles-card{
+    cursor: pointer;
+    .ai-wd-card{
+        padding: 0;
+
+        img{
+            border-radius: 10px;
+            transition: ease all .3s;
+            height: 226px;
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.02);
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.filter-short-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+
+    .filter-short-btns {
+        display: flex;
+        align-items: center;
+
+        button {
+            margin: 0 6px;
+
+            &:last-of-type {
+                margin-right: 0
+            }
+
+            i {
+                font-size: 24px;
+            }
+
+            &.icon-btns {
+                min-width: 35px;
+
+                &.eyeToggled {
+                    position: relative;
+                    transition: ease all .3s;
+
+                    &::after {
+                        content: "";
+                        height: 2px;
+                        width: 40px;
+                        background-color: $white;
+                        position: absolute;
+                        transform: rotate(30deg);
+                        left: 1px;
+                        top: 11px;
+                        box-shadow: 0px 1px 0px 1px $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.filtersWrapper {
+    border-left: 2px solid $gray-800;
+    padding: 15px 20px;
+    height: calc(100dvh - 250px);
+    position: sticky;
+    top: 10px;
+
+    .filter-form-group {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+
+        .ai-wd-checkbox {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: '';
+                height: 100%;
+                width: 100%;
+                background-color: $primary;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 3px;
+            }
+
+            &:checked::after {
+                content: '';
+                height: 100%;
+                width: 100%;
+                background-color: $primary;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 3px;
+                background-size: 16px;
+                background-position: 2px 4px;
+                background-repeat: no-repeat;
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguOTQ3MjggMTkuMTc0MUwwLjgyMjI3OCAxMS4wNDkxQzAuMzM0MTQzIDEwLjU2MSAwLjMzNDE0MyA5Ljc2OTUyIDAuODIyMjc4IDkuMjgxMzRMMi41OSA3LjUxMzU2QzMuMDc4MTQgNy4wMjUzOCAzLjg2OTY0IDcuMDI1MzggNC4zNTc3OCA3LjUxMzU2TDkuODMxMTcgMTIuOTg2OUwyMS41NTQ2IDEuMjYzNTZDMjIuMDQyNyAwLjc3NTQyNyAyMi44MzQyIDAuNzc1NDI3IDIzLjMyMjMgMS4yNjM1NkwyNS4wOTAxIDMuMDMxMzRDMjUuNTc4MiAzLjUxOTQ3IDI1LjU3ODIgNC4zMTA5MyAyNS4wOTAxIDQuNzk5MTFMMTAuNzE1MSAxOS4xNzQyQzEwLjIyNjkgMTkuNjYyMyA5LjQzNTQxIDE5LjY2MjMgOC45NDcyOCAxOS4xNzQxWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==');
+            }
+        }
+    }
+}
